@@ -54,6 +54,9 @@ function Login() {
       const handleSubmit = () => {
         history.push("/home");
       }
+      const handleRegister = () => {
+        history.push("/register");
+      }
         return (
             <div style={{margin: "20px"}}>
                 <Paper elevation={3}>
@@ -104,8 +107,11 @@ function Login() {
                     />
                     </FormControl>
                     <br/>
-                    <Button variant="contained" color="primary" onClick={handleSubmit}>
+                    <Button variant="contained" color="primary" className="buttons" onClick={handleSubmit}>
                         Submit
+                    </Button>
+                    <Button variant="contained" color="primary" className="buttons"onClick={handleRegister}>
+                        Register
                     </Button>
                     </div>
                 </Paper>
